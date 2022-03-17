@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="./Styles/index.css">
+</head>
+<div class="login">
+    <h1 class="login-title">Login</h1>
+    <% if(messages.error) { %>
+        <%messages.error%>
+        <% } %>
+    <form action="/login" method="POST">
+    <div class="login-info">
+        <div class="email">
+            <label class="login-email" for="email">Email</label>
+            <br>
+            <input class="login-email-input" type="email" id="email" name="email" placeholder="" required/>
+        </div>
+        <div class="password">
+            <label class="login-password" for="password">Password</label>
+            <br>
+            <input class="login-password-input" type="password" id="password" name="password" placeholder="" required/>
+        </div>
+    </div>
+    <div class="button-log-reg">
+        <button class="button" type="submit">Login</button>
+        <a class="btn-register" href="/register"><button class="button">Register</button></a>
+    </div>
+    </form>
+    
+</div>

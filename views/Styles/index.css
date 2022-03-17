@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+main,
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #222;
+  cursor: help;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+input [type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input [type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input [type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font-size: 99%;
+}
+
+small {
+  font-size: 99%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.05em;
+}
+
+sub {
+  bottom: -0.025em;
+}
+
+.clickable,
+label,
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+button {
+  cursor: pointer;
+}
+
+button,
+input[type="button"] {
+  width: auto;
+  overflow: hidden;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* dark shades of primary color*/
+/* The primary/main color */
+/* lighter shades of primary color */
+/* dark shades of secondary color*/
+/* secondary color */
+/* lighter shades of secondary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* lightest grey - used for outlines */
+/* Other Colors used */
+body {
+  background-color: black;
+  overflow-x: hidden;
+  font-family: helvetica, arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* dark shades of primary color*/
+/* The primary/main color */
+/* lighter shades of primary color */
+/* dark shades of secondary color*/
+/* secondary color */
+/* lighter shades of secondary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* lightest grey - used for outlines */
+/* Other Colors used */
+.login {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 33rem;
+  height: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  padding: 2rem;
+  background: radial-gradient(circle at center, #000000, #1c1c1c);
+}
+
+.login .login-title {
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.login .login-info {
+  width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login .email {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login .login-email {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.login .login-email-input {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: .75rem;
+  height: 1.5rem;
+  width: 20rem;
+}
+
+.login .password {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.login .login-password {
+  color: white;
+}
+
+.login .login-password-input {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: .75rem;
+  height: 1.5rem;
+  width: 20rem;
+}
+
+.login .button {
+  margin-top: 1rem;
+  width: 12rem;
+  height: 2rem;
+  border-radius: .75rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 1.2rem;
+}
+
+.login .btn-register {
+  text-align: center;
+}
+
+.login .button-log-reg {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2rem;
+}
+
+html,
+body {
+  font-family: helvetica, arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.banner-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .banner-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner-container .banner {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.banner-container:hover .banner {
+  opacity: 0.5;
+}
+
+.banner-container:hover .banner:hover {
+  -webkit-box-shadow: 0px 0px 10px 6px black;
+          box-shadow: 0px 0px 10px 6px black;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1;
+          flex: 4 1;
+  font-size: 20pt;
+  opacity: 1;
+}
+
+.banner-container:hover .banner:hover .banner-name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+}
+
+.banner-container .banner {
+  background: none 50%;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 0 0 black;
+          box-shadow: 0 0 0 0 black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 10pt;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-container .banner .banner-name {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-container #Batman-banner {
+  background-image: url(https://wallpaperaccess.com/full/220704.png);
+}
+
+.banner-container #Super-banner {
+  background-image: url(https://wallpaperaccess.com/full/631567.jpg);
+}
+
+.banner-container #Wonder-banner {
+  background-image: url(https://wallpaperaccess.com/full/2480042.jpg);
+}
+
+.banner-container #Flash-banner {
+  background-image: url(https://wallpaperfordesktop.com/wp-content/uploads/2021/11/Black-Aesthetic-Background-Images.jpg);
+}
+/*# sourceMappingURL=index.css.map */
