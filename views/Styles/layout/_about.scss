@@ -1,0 +1,83 @@
+.about-background {
+  background-image: url("https://wallpaperaccess.com/full/14259.jpg");
+  height: 65rem;
+  width: 100%;
+  .about-content {
+    position: relative;
+    top: 7rem;
+  }
+  .title-about {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+  }
+  .description-about {
+    text-align: center;
+    color: white;
+  }
+  .line {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-mission {
+    position: relative;
+    top: 10rem;
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    .mission {
+      width: 50%;
+      .title-mission {
+        text-align: center;
+        color: white;
+      }
+      .description-mission {
+        text-align: center;
+        color: white;
+      }
+    }
+    .img-about {
+      width: 25rem;
+      height: 18rem;
+    }
+  }
+  .about-goals {
+    position: relative;
+    top: 12rem;
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    .goal {
+      width: 50%;
+      .title-goal {
+        text-align: center;
+        color: white;
+      }
+      .description-goal {
+        text-align: center;
+        color: white;
+      }
+    }
+    .img-goal {
+      width: 25rem;
+      height: 18rem;
+    }
+  }
+  .vid-holder {
+    max-height: 20rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 8rem;
+    .video {
+      height: 20rem;
+      width: 30rem;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+  }
+}

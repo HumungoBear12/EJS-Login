@@ -23,15 +23,13 @@ summary {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img,
@@ -53,7 +51,6 @@ blockquote,
 q {
   quotes: none;
 }
-
 blockquote::before, blockquote::after,
 q::before,
 q::after {
@@ -102,19 +99,19 @@ pre {
   word-wrap: break-word;
 }
 
-input [type="radio"] {
+input [type=radio] {
   vertical-align: text-bottom;
 }
 
-input [type="checkbox"] {
+input [type=checkbox] {
   vertical-align: bottom;
 }
 
-.ie7 input [type="checkbox"] {
+.ie7 input [type=checkbox] {
   vertical-align: baseline;
 }
 
-.ie6 input[type="checkbox"] {
+.ie6 input[type=checkbox] {
   vertical-align: text-bottom;
 }
 
@@ -149,15 +146,15 @@ sub {
 
 .clickable,
 label,
-input[type="button"],
-input[type="submit"],
-input[type="file"],
+input[type=button],
+input[type=submit],
+input[type=file],
 button {
   cursor: pointer;
 }
 
 button,
-input[type="button"] {
+input[type=button] {
   width: auto;
   overflow: hidden;
 }
@@ -203,8 +200,7 @@ body {
 /* lightest grey - used for outlines */
 /* Other Colors used */
 .login {
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   width: 33rem;
   height: 30rem;
   margin-left: auto;
@@ -213,78 +209,559 @@ body {
   padding: 2rem;
   background: radial-gradient(circle at center, #000000, #1c1c1c);
 }
-
 .login .login-title {
   text-align: center;
   font-size: 5rem;
   color: white;
   border-bottom: 1px solid white;
 }
-
 .login .login-info {
   width: 24rem;
   margin-left: auto;
   margin-right: auto;
 }
-
 .login .email {
   margin-top: 1rem;
   text-align: center;
 }
-
 .login .login-email {
   color: white;
   font-size: 1.7rem;
 }
-
 .login .login-email-input {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border-radius: .75rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 0.75rem;
   height: 1.5rem;
   width: 20rem;
 }
-
 .login .password {
   margin-top: 1rem;
   font-size: 1.7rem;
   text-align: center;
 }
-
 .login .login-password {
   color: white;
 }
-
 .login .login-password-input {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border-radius: .75rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 0.75rem;
   height: 1.5rem;
   width: 20rem;
 }
-
 .login .button {
   margin-top: 1rem;
   width: 12rem;
   height: 2rem;
-  border-radius: .75rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-size: 1.2rem;
 }
-
 .login .btn-register {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.login .button-log-reg {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px "Oswald", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+  margin-bottom: 3rem;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.form-control,
+textarea {
+  width: 25rem;
+  max-width: 400px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  padding: 5px;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px "Lato", sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #1b1b1b;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px "Oswald", sans-serif;
+  color: #555;
+  letter-spacing: 1px;
   text-align: center;
 }
 
-.login .button-log-reg {
+hr {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .direct-contact-container,
+.form-horizontal {
+    margin: 0 auto;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .direct-contact-container,
+.form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .form-control,
+textarea {
+    margin: 0 auto;
+  }
+
+  .name,
+.email,
+textarea {
+    width: 280px;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+
+  .social-media-list {
+    left: 0;
+  }
+
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+.about-background {
+  background-image: url("https://wallpaperaccess.com/full/14259.jpg");
+  height: 65rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+}
+.about-background .about-content {
+  position: relative;
+  top: 7rem;
+}
+.about-background .title-about {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+.about-background .description-about {
+  text-align: center;
+  color: white;
+}
+.about-background .line {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-background .about-mission {
+  position: relative;
+  top: 10rem;
+  width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
+}
+.about-background .about-mission .mission {
+  width: 50%;
+}
+.about-background .about-mission .mission .title-mission {
+  text-align: center;
+  color: white;
+}
+.about-background .about-mission .mission .description-mission {
+  text-align: center;
+  color: white;
+}
+.about-background .about-mission .img-about {
+  width: 25rem;
+  height: 18rem;
+}
+.about-background .about-goals {
+  position: relative;
+  top: 12rem;
+  width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.about-background .about-goals .goal {
+  width: 50%;
+}
+.about-background .about-goals .goal .title-goal {
+  text-align: center;
+  color: white;
+}
+.about-background .about-goals .goal .description-goal {
+  text-align: center;
+  color: white;
+}
+.about-background .about-goals .img-goal {
+  width: 25rem;
+  height: 18rem;
+}
+.about-background .vid-holder {
+  max-height: 20rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 8rem;
+}
+.about-background .vid-holder .video {
+  height: 20rem;
+  width: 30rem;
+  box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.home-container {
+  background-image: url("https://free4kwallpapers.com/uploads/originals/2020/07/29/black-ocean-wallpaper.jpg");
+  width: 100%;
+  height: 55rem;
+}
+.home-container .home-flex {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home-container .home-flex .home-head {
+  width: 40rem;
+  margin-left: 5rem;
+  position: relative;
+  top: 4rem;
+}
+.home-container .home-flex .home-head .title-home {
+  color: white;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.home-container .home-flex .home-head .home-info {
+  color: white;
+  padding: 3px;
+  width: 70%;
+  font-size: 1.3rem;
+}
+.home-container .home-flex .home-video {
+  position: relative;
+  top: 4rem;
+  right: 3rem;
+}
+.home-container .home-flex .video {
+  width: 40rem;
+  height: 20rem;
+}
+.home-container .home-flex .logo {
+  width: 20rem;
+  height: 10rem;
+  margin-left: 7rem;
+}
+.home-container .home-flex .home-head2 {
+  width: 40rem;
+  margin-left: 5rem;
+  position: relative;
+  bottom: 4rem;
+}
+.home-container .home-flex .home-head2 .title-home2 {
+  color: white;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.home-container .home-flex .home-head2 .home-info2 {
+  color: white;
+  padding: 3px;
+  width: 80%;
+  font-size: 1.3rem;
+}
+
+.footer {
+  width: 100%;
+  height: 12rem;
+  background-color: black;
+  border-top: 1px solid white;
+}
+
+.footerHolder {
+  margin-left: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+.FootCon {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.FootCon1 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: solid white 2px;
+  margin-bottom: 0.5rem;
+}
+
+.FootSoc {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.FootSocial1 {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  border-bottom: solid white 2px;
+  margin-bottom: 0.5rem;
+}
+
+.FootLinks {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.FootNav1 {
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: solid white 2px;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footerIMG {
+  width: 80%;
+  height: 20rem;
+  border-radius: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.FootLinks:hover {
+  font-size: 1.3rem;
+}
+
+.FootSoc:hover {
+  font-size: 1.3rem;
+}
+
+.FootCon:hover {
+  font-size: 1.2rem;
+}
+
+.FootLinks:active {
+  color: yellow;
+}
+
+.FootSoc:active {
+  color: yellow;
+}
+
+.FootCon:active {
+  color: yellow;
 }
 
 html,
@@ -297,113 +774,123 @@ body {
 }
 
 .banner-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: #e0e0e0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 @media screen and (max-width: 800px) {
   .banner-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .banner-container .banner {
     width: 100%;
     height: 100%;
   }
 }
-
 .banner-container:hover .banner {
   opacity: 0.5;
 }
-
 .banner-container:hover .banner:hover {
-  -webkit-box-shadow: 0px 0px 10px 6px black;
-          box-shadow: 0px 0px 10px 6px black;
-  -webkit-box-flex: 4;
-      -ms-flex: 4 1;
-          flex: 4 1;
+  box-shadow: 0px 0px 10px 6px black;
+  flex: 4 1;
   font-size: 20pt;
   opacity: 1;
 }
-
 .banner-container:hover .banner:hover .banner-name {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 60px;
-          flex: 0 0 60px;
+  flex: 0 0 60px;
 }
-
 .banner-container .banner {
   background: none 50%;
   background-size: cover;
-  -webkit-box-shadow: 0 0 0 0 black;
-          box-shadow: 0 0 0 0 black;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0 0 0 0 black;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex: 1 1;
+  flex-direction: column;
   font-size: 10pt;
   height: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-transition: 0.3s;
+  justify-content: flex-end;
   transition: 0.3s;
 }
-
 .banner-container .banner .banner-name {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex: 1 1;
+  justify-content: center;
   width: 100%;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .banner-container #Batman-banner {
   background-image: url(https://wallpaperaccess.com/full/220704.png);
 }
-
 .banner-container #Super-banner {
-  background-image: url(https://wallpaperaccess.com/full/631567.jpg);
+  background-image: url(https://wallpapercave.com/wp/wp6899583.jpg);
 }
-
 .banner-container #Wonder-banner {
-  background-image: url(https://wallpaperaccess.com/full/2480042.jpg);
+  background-image: url(https://wallpapercave.com/wp/qh4vNT0.jpg);
+}
+.banner-container #Flash-banner {
+  background-image: url(https://free4kwallpapers.com/uploads/originals/2020/07/29/black-ocean-wallpaper.jpg);
 }
 
-.banner-container #Flash-banner {
-  background-image: url(https://wallpaperfordesktop.com/wp-content/uploads/2021/11/Black-Aesthetic-Background-Images.jpg);
+.banner-about {
+  height: 40rem;
+  width: 100%;
 }
-/*# sourceMappingURL=index.css.map */
+.banner-about .banner-img {
+  width: 100%;
+  height: 25rem;
+  box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.nav {
+  width: 100%;
+  height: 6rem;
+  background-color: transparent;
+  display: flex;
+  border-bottom: white 2px solid;
+}
+
+.listItem {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  top: 0.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.listItem:hover {
+  color: red;
+}
+
+.listItem:active {
+  color: #400000;
+}
+
+.list {
+  position: absolute;
+  right: 0;
+  top: 1.5rem;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navHead {
+  color: white;
+  position: relative;
+  left: 2rem;
+  top: 1rem;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=index.css.map */
