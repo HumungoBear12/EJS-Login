@@ -1,6 +1,14 @@
 <head>
     <link rel="stylesheet" href="./Styles/index.css">
 </head>
+<script>
+    document.querySelector('#contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            e.target.elements.name.value = '';
+            e.target.elements.email.value = '';
+            e.target.elements.message.value = '';
+        });
+</script>
 
 <section id="contact">
     <%- include('./Component/navbar.ejs'); %>

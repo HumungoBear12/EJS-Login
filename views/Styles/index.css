@@ -180,13 +180,22 @@ input[type=button] {
 /* lightest grey - used for outlines */
 /* Other Colors used */
 body {
-  background-color: black;
+  background-image: url("https://i.pinimg.com/originals/54/ba/1a/54ba1aebeb5c5c92105f430009db074c.jpg");
   overflow-x: hidden;
-  font-family: helvetica, arial, sans-serif;
+  font-family: arial, sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: #001247;
 }
 
 /* dark shades of primary color*/
@@ -265,12 +274,14 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
 #contact {
   width: 100%;
   height: 100%;
+  background-size: cover;
 }
 
 .section-header {
@@ -308,7 +319,7 @@ textarea {
   max-width: 400px;
   background-color: #000;
   color: #fff;
-  border: 1px solid white;
+  border: 1px solid #001247;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   padding: 5px;
@@ -527,7 +538,6 @@ textarea {
   }
 }
 .about-background {
-  background-image: url("https://wallpaperaccess.com/full/14259.jpg");
   height: 65rem;
   width: 100%;
 }
@@ -548,6 +558,7 @@ textarea {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  color: #001247;
 }
 .about-background .about-mission {
   position: relative;
@@ -572,6 +583,7 @@ textarea {
 .about-background .about-mission .img-about {
   width: 25rem;
   height: 18rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .about-background .about-goals {
   position: relative;
@@ -596,6 +608,7 @@ textarea {
 .about-background .about-goals .img-goal {
   width: 25rem;
   height: 18rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .about-background .vid-holder {
   max-height: 20rem;
@@ -611,72 +624,59 @@ textarea {
 }
 
 .home-container {
-  background-image: url("https://free4kwallpapers.com/uploads/originals/2020/07/29/black-ocean-wallpaper.jpg");
+  background-size: cover;
   width: 100%;
-  height: 55rem;
+  height: 90%;
 }
 .home-container .home-flex {
-  width: 80%;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-around;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
-.home-container .home-flex .home-head {
-  width: 40rem;
-  margin-left: 5rem;
-  position: relative;
-  top: 4rem;
+.home-container .home-flex .left-home {
+  width: 50%;
 }
-.home-container .home-flex .home-head .title-home {
+.home-container .home-flex .left-home .img-responsive-home {
+  height: 30rem;
+  width: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.home-container .home-flex .right-home {
+  width: 50%;
+}
+.home-container .home-flex .right-home .home-title {
+  font-size: 2.5rem;
   color: white;
+  text-align: center;
+}
+.home-container .home-flex .right-home .home-line {
+  border-top: 1px solid #001247;
+}
+.home-container .home-flex .right-home .home-img-flex {
+  padding: 20px;
+  display: Flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.home-container .home-flex .right-home .home-img-flex .img-home {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.home-container .home-flex .right-home .home-info {
+  margin-top: 2rem;
   text-align: left;
-  margin-bottom: 1rem;
-  font-size: 3rem;
-}
-.home-container .home-flex .home-head .home-info {
   color: white;
-  padding: 3px;
-  width: 70%;
-  font-size: 1.3rem;
-}
-.home-container .home-flex .home-video {
-  position: relative;
-  top: 4rem;
-  right: 3rem;
-}
-.home-container .home-flex .video {
-  width: 40rem;
-  height: 20rem;
-}
-.home-container .home-flex .logo {
-  width: 20rem;
-  height: 10rem;
-  margin-left: 7rem;
-}
-.home-container .home-flex .home-head2 {
-  width: 40rem;
-  margin-left: 5rem;
-  position: relative;
-  bottom: 4rem;
-}
-.home-container .home-flex .home-head2 .title-home2 {
-  color: white;
-  text-align: left;
-  margin-bottom: 1rem;
-  font-size: 3rem;
-}
-.home-container .home-flex .home-head2 .home-info2 {
-  color: white;
-  padding: 3px;
-  width: 80%;
-  font-size: 1.3rem;
 }
 
 .footer {
   width: 100%;
   height: 12rem;
-  background-color: black;
+  background-color: transparent;
   border-top: 1px solid white;
 }
 
@@ -762,6 +762,52 @@ textarea {
 
 .FootCon:active {
   color: yellow;
+}
+
+.Register {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 33rem;
+  height: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  padding: 2rem;
+  background: radial-gradient(circle at center, #000000, #1c1c1c);
+}
+.Register .Register-title {
+  text-align: center;
+  color: white;
+  font-size: 2.3rem;
+}
+.Register .RegisterForm {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Register .Register-info {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Register .Register-info .Register-tag {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 10rem;
+}
+.Register .Register-info .Register-text {
+  border-radius: 0.75rem;
+  width: 15rem;
+}
+.Register .Register-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 25px;
+  width: 100px;
+  border-radius: 0.75rem;
+  margin-top: 1.4rem;
 }
 
 html,
@@ -852,7 +898,9 @@ body {
   height: 6rem;
   background-color: transparent;
   display: flex;
-  border-bottom: white 2px solid;
+  border-bottom: #001247 2px solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
 }
 
 .listItem {
@@ -893,4 +941,167 @@ body {
 .navLink {
   color: white;
   text-decoration: none;
+}
+
+#slideshow {
+  margin: 0 auto;
+  height: 630px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  top: 3rem;
+}
+
+.slideshow-title {
+  font-family: "Allerta Stencil";
+  font-size: 62px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25%;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.sub-heading {
+  padding-top: 50px;
+  font-size: 18px;
+}
+
+.sub-heading-two {
+  font-size: 15px;
+}
+
+.sub-heading-three {
+  font-size: 13px;
+}
+
+.sub-heading-four {
+  font-size: 11px;
+}
+
+.sub-heading-five {
+  font-size: 9px;
+}
+
+.sub-heading-six {
+  font-size: 7px;
+}
+
+.sub-heading-seven {
+  font-size: 5px;
+}
+
+.sub-heading-eight {
+  font-size: 3px;
+}
+
+.sub-heading-nine {
+  font-size: 1px;
+}
+
+.entire-content {
+  margin: auto;
+  width: 190px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+}
+
+.content-carrousel {
+  width: 100%;
+  position: absolute;
+  float: right;
+  -webkit-animation: rotar 30s infinite linear;
+          animation: rotar 30s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.content-carrousel figure {
+  width: 100%;
+  height: 40vh;
+  border: 1px solid #3b444b;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(10) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+.shadow {
+  position: absolute;
+  box-shadow: 0px 0px 10px 0px #030063;
+  border-radius: 1px;
+}
+
+.content-carrousel img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 20rem;
+}
+
+.content-carrousel img:hover {
+  transform: scale(1.2);
+  transition: all 400ms;
+}
+
+@-webkit-keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.page-header {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
 }/*# sourceMappingURL=index.css.map */

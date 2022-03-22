@@ -7,16 +7,19 @@ const bcrypt = require('bcrypt');
 const flash = require('express-flash');
 const session = require('express-session');
 const passport = require('passport'); 
-const methodOverride = require('method-override');  
+const methodOverride = require('method-override');
+const connectDB = require('./Mongo/connect');
 
-const initializePassport = require('./passport-config')
-initializePassport(
-    passport,
-    email => users.find(user => user.email === email),
-    id => users.find(user => user.id === id)
-)
 
-const users = [];
+
+// const initializePassport = require('./passport-config')
+// // initializePassport(
+// //     passport,
+// //     email => users.find(user => user.email === email),
+// //     id => users.find(user => user.id === id)
+// )
+
+
 app.set('view engine', 'ejs');
 
 app.use("/Styles",express.static(__dirname + "/views/Styles"));
@@ -72,7 +75,7 @@ app.post('/Register',notAuthenticated,async (req, res) => {
             email:req.body.email,
             password:hashedPassword
         })
-        res.redirect('/login')
+        res.redirect('/Login')
     }catch{
         res.redirect('/register')
     }
@@ -81,13 +84,13 @@ app.post('/Register',notAuthenticated,async (req, res) => {
 
 app.delete('/logout',(req, res) => {
     req.logout()
-    res.redirect('/login')
+    res.redirect('/Login')
 })
 function ensureAuthenticated(req, res,next){
     if(req.isAuthenticated()){
         return next()
     }
-    res.redirect('/login')
+    res.redirect('/Login')
 }
 
 function notAuthenticated(req, res, next){
@@ -96,4 +99,12 @@ function notAuthenticated(req, res, next){
     }
     next()
 }
-app.listen(3000);
+const port = process.env.PORT ||3000;
+const start = async () => {
+    try {
+        await connectDB(process.env.MONGO_URI);
+        // await populateProducts()
+        app.listen(port, console.log(`server is listening on port ${port}`));
+    } catch (error) { console.log(error) }
+}
+start();

@@ -3,7 +3,9 @@
   height: 6rem;
   background-color: transparent;
   display: flex;
-  border-bottom: white 2px solid;
+  border-bottom: $clr-blue1 2px solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
 }
 
 .listItem {
