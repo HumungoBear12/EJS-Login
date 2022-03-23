@@ -12,13 +12,13 @@ const connectDB = require('./Mongo/connect');
 
 
 
-// const initializePassport = require('./passport-config')
-// // initializePassport(
-// //     passport,
-// //     email => users.find(user => user.email === email),
-// //     id => users.find(user => user.id === id)
-// )
-
+const initializePassport = require('./Middleware/passport-config')
+initializePassport(
+    passport,
+    email => users.find(user => user.email === email),
+    id => users.find(user => user.id === id)
+)
+const users = []
 
 app.set('view engine', 'ejs');
 
@@ -32,6 +32,7 @@ app.use(session({
 }));
 app.use(passport.initialize())
 app.use(passport.session())
+require('./Middleware/passport-config')(passport);
 app.use(methodOverride('_method'))
 
 app.get('/',(req, res)=>{
@@ -60,7 +61,7 @@ app.get('/Register',notAuthenticated, (req, res) => {
     res.render('register.ejs')
 })
 
-app.post('/Login', notAuthenticated, passport.authenticate('local', {
+app.post('/Login', passport.authenticate('local', {
     successRedirect: '/Dash',
     failureRedirect: '/Login',
     failureFlash: true
@@ -77,7 +78,7 @@ app.post('/Register',notAuthenticated,async (req, res) => {
         })
         res.redirect('/Login')
     }catch{
-        res.redirect('/register')
+        res.redirect('/Register')
     }
     console.log(users)
 })
@@ -86,6 +87,7 @@ app.delete('/logout',(req, res) => {
     req.logout()
     res.redirect('/Login')
 })
+
 function ensureAuthenticated(req, res,next){
     if(req.isAuthenticated()){
         return next()
@@ -99,6 +101,7 @@ function notAuthenticated(req, res, next){
     }
     next()
 }
+
 const port = process.env.PORT ||3000;
 const start = async () => {
     try {
