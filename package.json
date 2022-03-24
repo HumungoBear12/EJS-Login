@@ -4,7 +4,7 @@
   "description": "Login Project",
   "main": "app.js",
   "scripts": {
-    "start": "npm start"
+    "start": "npx nodemon app.js"
   },
   "repository": {
     "type": "git",
