@@ -1,17 +1,28 @@
-<h1>Register</h1>
-<form action="/register" method="POST">
-<div>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="" required/>
+<head>
+    <link rel="stylesheet" href="./Styles/index.css">
+</head>
+<div class="Register">
+    <h1 class="Register-title">Register</h1>
+    <form class="RegisterForm" action="/register" method="POST">
+        <div class="Register-info">
+            <label class="Register-tag" for="name">Name: </label>
+            <input class="Register-text" type="text" id="name" name="name" placeholder="" required />
+        </div>
+        <div class="Register-info">
+            <label class="Register-tag" for="email">Email: </label>
+            <input class="Register-text" type="email" id="email" name="email" placeholder="" required />
+        </div>
+        <div class="Register-info">
+            <label class="Register-tag" for="password">Password: </label>
+            <input class="Register-text" type="password" id="password" name="password" placeholder="" required />
+        </div>
+        <button class="Register-btn" type="submit">Register</button>
+    </form>
+    <div style="width:50%;display:flex; justify-content: space-around; flex-wrap: wrap;margin-left: auto;
+    margin-right: auto">
+        
+        <button class="Register-btn"><a style="color: black;" href="/Login">Login</a></button>
+        <button class="Register-btn"><a style="color: black;" href="/">Home</a></button>
+    </div>
+
 </div>
-<div>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="" required/>
-</div>
-<div>
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" placeholder="" required/>
-</div>
-<button type="submit">Register</button>
-</form>
-<a href="/Login">login</a>

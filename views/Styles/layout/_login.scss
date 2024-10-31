@@ -1,67 +1,77 @@
-.login{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    width: 33rem;
-    height:30rem;
+.login {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 33rem;
+  height: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  padding: 2rem;
+  background: radial-gradient(circle at center, #000000, #1c1c1c);
+  .login-title {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  .login-info {
+    width: 24rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top:10rem;
-    padding: 2rem;
-    background: radial-gradient(circle at center, #000000 , #1c1c1c);
-    .login-title{
-        text-align: center;
-        font-size: 5rem;
-        color: white;
-        border-bottom: 1px solid white;
-        }
-        .login-info{
-            width:24rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .email{
-            margin-top:1rem;        
-            text-align: center;
-        }
-        .login-email{
-            color: white;
-            font-size:1.7rem;
-        }
-        .login-email-input{
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            border-radius: .75rem;
-            height:1.5rem;
-            width: 20rem;
-        }
-        .password{
-            margin-top:1rem;
-            font-size:1.7rem;
-            text-align: center;
-        }
-        .login-password{
-            color: white;
-        }
-        .login-password-input{
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            border-radius: .75rem;
-            height:1.5rem;
-            width: 20rem;
-
-        }
-        .button{
-            margin-top:1rem;
-            width:12rem;
-            height:2rem;
-            border-radius: .75rem;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            font-size: 1.2rem;
-        }
-        .btn-register{
-            text-align: center;
-        }
-        .button-log-reg{
-            width:100%;
-            display: flex;
-            justify-content:space-around;
-            margin-top:2rem;
-        }
+  }
+  .email {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .login-email {
+    color: white;
+    font-size: 1.7rem;
+  }
+  .login-email-input {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 0.75rem;
+    height: 1.5rem;
+    width: 20rem;
+  }
+  .password {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .login-password {
+    color: white;
+  }
+  .login-password-input {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 0.75rem;
+    height: 1.5rem;
+    width: 20rem;
+  }
+  .button {
+    margin-top: 1rem;
+    width: 12rem;
+    height: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 1.2rem;
+  }
+  .btn-register {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+  .button-log-reg {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
 }
